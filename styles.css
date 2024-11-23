@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: hsl(193, 38%, 86%);
+  --green: hsl(150, 100%, 66%);
+  --bg-advice: hsl(217, 19%, 38%);
+  --bg-main: hsl(218, 23%, 16%);
+  /*
+   hsl(217, 19%, 24%);
+   font-size: 28px;
+   weight: 800;
+    */
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  background: hsl(218, 23%, 16%);
+  font-family: Manrope;
+  font-weight: 800;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(90%, 545px);
+  padding: 52px 48px;
+  background: hsl(217, 19%, 24%);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.advice__title {
+  color: var(--green);
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.advice__text {
+  color: var(--text-color);
+  margin: 36px 0 40px;
+  line-height: 1.4;
+  font-size: 1.75rem;
+}
+
+picture {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+}
+
+.new {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 66px;
+  height: 66px;
+  background-color: var(--green);
+  border-radius: 50%;
+  transition: 0.3s;
+  border: 0;
+  cursor: pointer;
+}
+
+.new:hover {
+  box-shadow: 1px 1px 50px var(--green);
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}

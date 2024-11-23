@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | Advice generator app</title>
+  </head>
+  <body>
+    <section class="container">
+      <h1 class="advice__title">
+        Advice # <span class="advice__id"></span>
+      </h1>
+      <div class="advice__text">
+        "You Should always be a mother fucker! otherwise
+        they won't respect you!"
+      </div>
+      <picture>
+        <source
+          srcset="./images/pattern-divider-desktop.svg"
+          alt="Pattern Divider"
+          media="(min-width: 600px)"
+        />
+        <img
+          src="./images/pattern-divider-mobile.svg"
+          alt="Pattern Divider"
+        />
+      </picture>
+      <button class="new">
+        <img src="./images/icon-dice.svg" alt="" />
+      </button>
+    </section>
+    <script src="./main.js"></script>
+  </body>
+</html>
